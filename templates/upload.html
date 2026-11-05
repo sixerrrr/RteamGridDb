@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rteam Grid Database</title>
+    {% include 'components/head.html' %}
+</head>
+<body>
+    {% include 'components/nav.html' %}
+    <main>
+        <h1>Upload</h1>
+        <!-- TODO: Improve this -->
+        <div class="gamebox-banners">
+            <div>
+                <input type="radio" name="type" id="radio-banner">
+                <label for="radio-banner">Banner (2232px x 720px)</label>
+            </div>
+            <div>
+                <input type="radio" name="type" id="radio-icon">
+                <label for="radio-icon">Icon (128px x 128px)</label>
+            </div>
+            <div>
+                <input type="radio" name="type" id="radio-logo">
+                <label for="radio-logo">Logo (1280px x 600px)</label>
+            </div>
+        </div>
+        <br>
+        <!-- TODO: Add drag'n'drop -->
+        <input type="file">
+        <br><br>
+        <button class="submit">Submit</button>
+    </main>
+</body>
+</html>
